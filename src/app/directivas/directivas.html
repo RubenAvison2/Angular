@@ -1,0 +1,17 @@
+<div class="directiva-container">
+  <input [(ngModel)]="name" placeholder="Cambia tu nombre">
+  <h3>Usuario: {{ name }}</h3>
+
+  <hr>
+
+  <div class="card" 
+       [ngClass]="{ 'estado-critico': energia < 20, 'estado-optimo': energia >= 20 }">
+    
+    <img [src]="image" [alt]="altImage" 
+         [ngStyle]="{'border': rol === 'Admin' ? '2px solid cyan' : '2px solid yellow'}">
+    <p>Nivel de Energía: {{ energia }}%</p>
+
+
+    <input type="range" [(ngModel)]="energia" min="0" max="100">
+  </div>
+</div>

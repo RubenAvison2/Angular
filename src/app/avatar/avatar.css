@@ -1,0 +1,100 @@
+h1 {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #3f51b5; 
+  text-align: center;
+  padding: 20px;
+}
+img {
+  width: 150px;       
+  height: 150px;      
+  border-radius: 50%;   
+  object-fit: cover;  
+  border: 3px solid #3f51b5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  align-items: center;
+  margin: 0 auto; 
+  display: block;
+}
+
+.containerVisitor {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo de la etiqueta */
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* El campo de texto (Input) */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Para que el padding no ensanche el input */
+}
+
+/* Efecto cuando el usuario hace clic en el input */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* El mensaje de saludo */
+h2 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  /* Una pequeña animación para que aparezca suavemente */
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Animación simple */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+button{
+  background-color: #28a745; 
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

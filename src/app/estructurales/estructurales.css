@@ -1,0 +1,73 @@
+/* Contenedor principal: organiza las tarjetas en una cuadrícula */
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo de cada tarjeta de usuario */
+.user {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent; /* Reservamos espacio para el borde de ngClass */
+}
+
+.user:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de perfil */
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+
+/* Textos */
+.user h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.user p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* --- CLASES PARA NGCLASS --- */
+
+.borde-azul {
+  border: 2px solid #00d4ff !important;
+  background-color: #f0fbff;
+}
+
+.borde-amarillo {
+  border: 2px solid #ffd000 !important;
+  background-color: #fffdf0;
+}
+
+/* --- ESTILO PARA LA BARRA DE ENERGÍA (ngStyle) --- */
+.energy-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 8px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.energy-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}

@@ -1,0 +1,15 @@
+<div class="containerVisitor">
+  <label for="nombre">¿Cómo te llamas?</label>
+  <input type = "text" [(ngModel)]="visitor" id="visitor" placeholder="Escribe tu nombre">
+  <h2>Hola, {{visitor}}</h2><!--two way binding-->
+</div>
+<div class="avatar-container">
+  <img [src]="image" [alt]="altImage"> <!--Propery binding-->
+  <h1>Esto es un template para {{ name }}</h1> <!--interpolacion-->
+  <h2>Hoy es: {{today}} // {{today | date:'shortDate'}} // {{today | date:'dd/MM/yyyy' }}</h2><!--pipes-->
+
+  <button
+    (click)="contratar()" 
+    class="button">
+    Contratar</button> <!--Event binding-->
+</div>

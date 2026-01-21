@@ -1,0 +1,10 @@
+<div class="users">
+  <div class="user" *ngFor="let user of usuarios">
+    <img [src]="user.image" [alt]="user.altImage" width="50">
+    <p>{{ user.name }} - <strong>{{ user.rol }}</strong></p>
+    
+    <div [ngClass]="user.rol === 'Admin' ? 'borde-azul' : 'borde-amarillo'">
+        Energía: {{ user.energia }}%
+    </div>
+  </div>
+</div>
