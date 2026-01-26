@@ -1,0 +1,21 @@
+<div class="card-detalle">
+  <h2>{{ mascotaEncontrada() ? 'Detalle de ' + mascotaEncontrada()?.name : 'Detalle de la Mascota' }}</h2>
+  
+  <div class="id-badge">ID: {{ id() }}</div>
+
+  @if (mascotaEncontrada()) {
+    <div class="status">
+      <span>🐾</span>
+      <p>{{ mascotaEncontrada()?.info }}</p> 
+    </div>
+  } @else {
+    <div class="status">
+      <span>🐾</span>
+      <p>Estado: Buscando hogar</p>
+    </div>
+  }
+  
+  <button class="btn-volver" routerLink="/quienes-somos">
+    ← Volver al listado
+  </button>
+</div>

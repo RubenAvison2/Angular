@@ -38,5 +38,13 @@ usuarios = [
   altImage : "Imagen de usuario",
   energia: 20,
 },
+{
+  image : "avatar2.jpg",
+  name : "Juana",
+  rol : "User",
+  altImage : "Imagen de usuario",
+  energia: 20,
+
+}
 ]
 }

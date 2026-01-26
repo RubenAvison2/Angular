@@ -1,0 +1,104 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  color: #7f8c8d;
+  margin-bottom: 40px;
+}
+
+/* Grid de Mascotas */
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* Tarjeta Individual */
+.mascota-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.mascota-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  border-color: #ffce00;
+}
+
+/* Contenedor de Imagen */
+.image-container {
+  background: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffce00;
+  width: 80px;
+  height: 80px;
+}
+
+/* Información de la mascota */
+.info {
+  padding: 15px;
+}
+
+.info h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #e1f5fe;
+  color: #0288d1;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.detalle-link {
+  margin-top: 15px;
+  color: #ffce00;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Botón Volver */
+.btn-volver {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-volver:hover {
+  background-color: #34495e;
+}

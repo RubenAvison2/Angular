@@ -1,0 +1,16 @@
+<section style="padding: 20px; font-family: sans-serif;">
+  <h1>{{ titulo }}</h1>
+  <p>{{ descripcion }}</p>
+  <div class="mascotas-grid">
+  <div class="mascota-card" *ngFor="let mascota of mascotas"
+    [routerLink]="['/mascota', mascota.id]" >
+    <img [src]="mascota.image"  width="50">
+   <div class="info">
+        <h3>{{ mascota.name }}</h3>
+        <span class="badge">{{ mascota.type }}</span>
+        <p class="detalle-link">Ver ficha 🐾</p>
+      </div>
+  </div>
+</div>
+    <button class="btn-volver" routerLink="/">Volver al listado</button>
+</section>

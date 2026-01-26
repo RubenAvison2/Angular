@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 export class Directivas {
   image = "avatar.jpg";
   name = "Rubén";
-  rol = "User";
+  rol = "Admin";
   altImage = "Imagen de usuario";
-  energia:number = 50;
+  energia:number = 30;
 }
