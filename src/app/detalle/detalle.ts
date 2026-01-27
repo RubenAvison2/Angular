@@ -20,7 +20,8 @@ export class Detalle {
   /*computed() en Angular es una función primitiva de Signals utilizada para crear 
   señales de solo lectura cuyo valor se deriva automáticamente de otras señales.
   Es decir, se queda escuchando id para ver si cambia. Pero esto solo lo hace si la
-  página de detalle está cargada
+  página de detalle está cargada.
+  Nos permite transforma esa señal del id ha cambiado al objeto que necesitamos 
   Find() recorre el array y devuelve el primer elemento que cumple la condición
 */
   );
