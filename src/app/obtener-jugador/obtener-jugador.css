@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.container {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Título del jugador */
+h2 {
+  color: #1a2a6c;
+  text-align: center;
+  border-bottom: 2px solid #1a2a6c;
+  padding-bottom: 10px;
+}
+
+/* Estilo para la lista de partidos */
+.match-card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.match-card:hover {
+  transform: scale(1.02);
+}
+
+/* Resultado del partido (Score) */
+.score {
+  font-weight: bold;
+  background: #343a40;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Botón de búsqueda */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Formato para el JSON crudo (opcional) */
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  overflow-x: auto;
+}

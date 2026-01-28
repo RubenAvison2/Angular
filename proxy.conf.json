@@ -1,0 +1,10 @@
+{
+  "/api-futbol": {
+    "target": "https://api.football-data.org",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api-futbol": ""
+    }
+  }
+}

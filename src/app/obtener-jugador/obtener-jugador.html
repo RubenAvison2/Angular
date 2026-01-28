@@ -1,0 +1,6 @@
+<div *ngIf="datos">
+  <h2>Jugador: {{ datos.person?.name }}</h2>
+  <pre>{{ datos | json }}</pre>
+</div>
+
+<button (click)="cargarDatos(213266)">Ver a Mbappé</button>
