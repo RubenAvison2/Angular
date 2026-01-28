@@ -1,15 +1,13 @@
 import { Routes } from '@angular/router';
+import { Detalle } from './detalle/detalle';
+import { QuienesSomos } from './quienes-somos/quienes-somos';
 
 export const routes: Routes = [
     {
-      path: "quienes-somos",
-      loadComponent: () => import('./quienes-somos/quienes-somos')
-      .then(m => m.QuienesSomos)       
+      path: "quienes-somos",component:QuienesSomos     
     },
     { 
-    path: 'mascota/:id', 
-    loadComponent: () => import('./detalle/detalle')
-    .then(m => m.Detalle) 
+    path: 'mascota/:id', component:Detalle
   },
     {
       path: '', redirectTo: 'quienes-somos', pathMatch: 'full' //si no hay path, por defecto redirigimos al quienes-somos
